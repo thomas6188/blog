@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Random notes and thoughts.]]></description><link>https://thomas6188.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 28 Dec 2024 15:14:27 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Random notes and thoughts.]]></description><link>https://thomas6188.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Dec 2024 10:12:30 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[About my work I am a Technical Architect at Tata Consultancy Service. I have 13+ years of experience in SharePoint and Office 365 space…]]></description><link>https://thomas6188.github.io/blog/hello-world/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/hello-world/</guid><pubDate>Tue, 24 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h5&gt;&lt;ins&gt;&lt;em&gt;About my work&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+&lt;p&gt;I am a Technical Architect at Tata Consultancy Service. I have 13+ years of experience in SharePoint and Office 365 space, with focus on cloud and related technologies- SharePoint Online, Office 365, Azure, SharePoint Server, Dot Net, and JavaScript.&lt;/p&gt;
+&lt;p&gt;At TCS, I am part of Microsoft Digital Workplace team that helps customers build a Modern Workplace using Microsoft SAAS and Cloud offerings.&lt;/p&gt;
+&lt;p&gt;I started my career as a SharePoint developer in 2011. Back in those days, everything was on-prem, and WSP Builder was the goto extension😑. Building a custom component required a SharePoint Server, not only for deployment but also for developement. I still have the VDI files of SP 2007, 2010, and 2013 dev servers in my backup drive😃.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;&lt;ins&gt;&lt;em&gt;My Roles and Responsibilities&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+&lt;br&gt;
+&lt;p&gt;Design and Develop Modern Workplace solutions such as Intranets, Content Management, and Collaboration Portals, leveraging SharePoint, Office 365, and Azure.&lt;/p&gt;
+&lt;p&gt;Participate in RFPs and Design Reviews by providing ideas, feedback, and solutions. Interact with clients to understand the business requirements and provide the right solution.&lt;/p&gt;
+&lt;p&gt;Implement SharePoint On-Premise to Office 365 migration, Office 365 roll-out and enablement (setup and configuration) for greenfield projects.&lt;/p&gt;
+&lt;p&gt;Guide peers in understanding SharePoint and related technologies.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;&lt;ins&gt;&lt;em&gt;Key areas that I have worked on recently&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+&lt;br&gt;
+&lt;h5&gt;SharePoint and Office 365&lt;/h5&gt;
+&lt;p&gt;SharePoint Framework (SPFx) Apps, Office UI Fabric, PnP JS, Single Page Apps, SharePoint Add-Ins, Site Provisioning, Microsoft Groups, Modern Team and Communication Sites, Teams, and Planner. Power Platform- Power Automate and Power Apps.&lt;/p&gt;
+&lt;h5&gt;Azure&lt;/h5&gt;
+&lt;p&gt;Graph APIs, Azure DevOps, Logic Apps, Azure Functions, and App Services.&lt;/p&gt;
+&lt;h5&gt;Web Developement&lt;/h5&gt;
+&lt;p&gt;Asp.Net, JavaScript, React JS, Angular JS, TypeScript, and Bootstrap. Basics of Angular, and Vue JS.&lt;/p&gt;
+&lt;h5&gt;Migration Tools&lt;/h5&gt;
+&lt;p&gt;Sharegate, Metalogix.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;&lt;ins&gt;&lt;em&gt;Apps and Tools that I use&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+&lt;p&gt;VS Code, Visual Studio, Postman, PowerShell, GitKraken, and JIRA.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h5&gt;&lt;ins&gt;&lt;em&gt;Science and Tech&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+&lt;br&gt;
+&lt;p&gt;I have always been fascinated by Science and Technology. My love for tech started (during my high school days) when I read a magazine called The Chip. While growing up, I didn&apos;t have access to Internet, so this magazine was my gateway to the world of gadgets, apps, and technology in general. The first personal computer I had was a Pentium 3 Desktop, with 48 MB RAM. This was my lab for trying out a new OS, apps, and games. I still remember making a scene 😭 at home so that my parents can buy me a 16 MB RAM module because Win XP won&apos;t install with anything less 😞.&lt;/p&gt;
+&lt;p&gt;Today, 15 years later, nothing has changed for me. I still read that magazine (now Digit), I still get excited when I see a new product launch, a new breakthrough or a discovery in science and tech.  Checkout the Tesla auto-pilot feature- the way it works (flawlessly) is simply amazing and mind blowing.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;Tech that I own&lt;/h5&gt;
+&lt;p&gt;Laptops: ThinkPad E595, IdeaPad 530S.&lt;/p&gt;
+&lt;p&gt;Monitor: LG 22MP68VQ.&lt;/p&gt;
+&lt;p&gt;Keyboard: Red Gear MK881 Mechanical Keyboard.&lt;/p&gt;
+&lt;p&gt;Headphones: Bose QC 35 (god&apos;s gift to tech lovers), Sennheiser CX 275.&lt;/p&gt;
+&lt;p&gt;Tablet: Apple iPad (2018).&lt;/p&gt;
+&lt;p&gt;E-Reader: Amazon Kindle Paperwhite (2014).&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h5&gt;&lt;ins&gt;&lt;em&gt;Food and Travel&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+&lt;br&gt; 
+&lt;p&gt;One thing I believe when it comes to Food and Travel is that it should never be a forced activity. It is best enjoyed alone or with people you like. Instagram or Facebook posts shouldn&apos;t be the deciding factor, your fondness for the people, place, and food should.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;Food&lt;/h5&gt;
+&lt;p&gt;Fav Food: Malabar Parotta + Chicken/Beef fry.&lt;/p&gt;
+&lt;p&gt;Fav Wine: Red. Cabernet Sauvignon, and Merlot (both recommended by a family friend). Brand - Jacob&apos;s Creek.&lt;/p&gt;
+&lt;p&gt;Fav Chocolates: Haigh&apos;s Dessert Chocolate Block, Whittaker&apos;s Dark Almond, Lindt 70% Dark, Aldi Choceur Dark Block, Amul 55% Dark.&lt;/p&gt;
+&lt;p&gt;Fav Ice Creams: Haagen-Dazs cookie dough chip, Connoisseur cookies and cream, Amul (almost any flavour).&lt;/p&gt;
+&lt;br&gt; 
+&lt;h5&gt;Travel&lt;/h5&gt;
+&lt;p&gt;Fav local journey: Hometown ↔ Trivandrum. KSRTC/Indian Railways. Window seat.  Cloudy weather, with light drizzle.&lt;/p&gt;
+&lt;p&gt;Recent memorable trip: Great Ocean Road, Melbourne.&lt;/p&gt;
+&lt;p&gt;Recent memorable pics:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://photos.app.goo.gl/qwAYQDJmXe6zBjT6A&quot;&gt;https://photos.app.goo.gl/qwAYQDJmXe6zBjT6A&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://photos.app.goo.gl/NAX3Hgi7ZxuWM3vy9&quot;&gt;https://photos.app.goo.gl/NAX3Hgi7ZxuWM3vy9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wishlist: Euro Trip.&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;&lt;ins&gt;&lt;em&gt;Entertainment&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+&lt;br&gt; 
+&lt;h5&gt;Books&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/review/list/6098066-thomas-mathew&quot;&gt;https://www.goodreads.com/review/list/6098066-thomas-mathew&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h5&gt;Movies and Television&lt;/h5&gt;
+&lt;p&gt;Languages: English, Hindi, and Malayalam.&lt;/p&gt;
+&lt;p&gt;Genre: Action, Comedy, Romance, and Sci-fi. Basically, anything except Horror.&lt;/p&gt;
+&lt;p&gt;Recent Fav Movies: Avengers Endgame, Joker, The Irishman, Uri, Lucifer, Kumbalangi Nights.&lt;/p&gt;
+&lt;p&gt;Recent Favs Shows: Silicon Valley, BoJack Horseman, The Boys, The Family Man, Panchayat.&lt;/p&gt;
+&lt;p&gt;Much awaited: No Time to Die, Top Gun Maverick.&lt;/p&gt;
+&lt;p&gt;TV Shows: &lt;a href=&quot;https://www.imdb.com/list/ls073361911/&quot;&gt;https://www.imdb.com/list/ls073361911/&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;  
+&lt;h5&gt;Sports&lt;/h5&gt;
+&lt;p&gt;Cricket (W&amp;#x26;P), Tennis (W), and WWE(W).&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;If there is one guilty pleasure that I have when it comes to sports, that would be WWE (if you count it as Sports). Back in the days, it was known as WWF.  I still remember the good old days, when I used to play VCR cassettes on repeat mode, every time I travelled to my hometown in Kerala for my summer vacation.&lt;br&gt;
+The matches (and storylines) we have now cannot hold a candle to what we had during the Attitude Era. With the passage of time, and as I grew older, the thrill for the sports fizzled out. Although, I do enjoy major annual events such as WrestleMania, in a hope that I get to see some of the old WWE Hall Of Famers.  Stone Cold&apos;s entrance music still gives me goose bumps 🤩.&lt;/p&gt;
+&lt;br&gt; 
+&lt;br&gt; </content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://thomas6188.github.io/blog/new-beginnings/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
@@ -96,222 +181,4 @@ chicken eggs, though the…]]></description><link>https://thomas6188.github.io/b
 chicken eggs, though the taste and texture will be somewhat different, and the
 egg yolk will be less rich.&quot;?
 (&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn&apos;t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I'm sure I'll write a lot more interesting things in the future. Oh, and here's a…]]></description><link>https://thomas6188.github.io/blog/hello-world/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I&apos;m sure I&apos;ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here&apos;s a great quote from this Wikipedia on
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
-eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-charcoal paste. The eggs may also be sold with the salted paste removed,
-wrapped in plastic, and vacuum packed. From the salt curing process, the
-salted duck eggs have a briny aroma, a gelatin-like egg white and a
-firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERIy/9oACAEBAAEFAkqW7B5Zox9t8n//xAAXEQEAAwAAAAAAAAAAAAAAAAAAERJB/9oACAEDAQE/AdVl/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEC/9oACAECAQE/AYun/8QAGxAAAQQDAAAAAAAAAAAAAAAAAAECESEiMTL/2gAIAQEABj8CvRjaHMkvIQo//8QAGxAAAwEBAAMAAAAAAAAAAAAAAREhAEGBobH/2gAIAQEAAT8hsTTH203YINmYDPHckkPzQiAnv//aAAwDAQACAAMAAAAQyC//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDAQE/EBHDK6y//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERIVH/2gAIAQIBAT8QWiS0j//EABwQAQEAAgMBAQAAAAAAAAAAAAERADEhYYFB4f/aAAgBAQABPxBOzi0NHmChLtHkL9EcWZeCVJ1kcRoVp3lEYcnjEk0ES7/Jn//Z&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
-/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
-/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
-/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
-/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
-/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;You can also write code blocks here!&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; saltyDuckEgg &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chinese preserved food product&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;Number&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;Title&lt;/th&gt;
-&lt;th align=&quot;right&quot;&gt;Year&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Philosopher’s Stone&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Chamber of Secrets&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2002&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Prisoner of Azkaban&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2004&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;a href=&quot;https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md&quot;&gt;View raw (TEST.md)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is a paragraph.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Header 1
-========
-
-Header 2
---------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1 #
-## Header 2 ##
-### Header 3 ###
-#### Header 4 ####
-##### Header 5 #####
-###### Header 6 ######&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;h2&gt;This is a header.&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;This is the first list item.&lt;/li&gt;
-&lt;li&gt;This is the second list item.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here&apos;s some example code:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Markdown.generate();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; ## This is a header.
-&gt; 1. This is the first list item.
-&gt; 2. This is the second list item.
-&gt;
-&gt; Here&apos;s some example code:
-&gt;
-&gt;     Markdown.generate();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Red
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Green
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Blue
-
-&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Red
-&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Green
-&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Blue
-
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Red
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Green
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Blue&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`code goes`&lt;/span&gt; here in this line
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; goes here&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;Buy flour and salt&lt;/li&gt;
-&lt;li&gt;Mix together with water&lt;/li&gt;
-&lt;li&gt;Bake&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Buy flour and salt
-&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Mix together with water
-&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Bake&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`code goes`&lt;/span&gt; here in this line
-&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; goes here&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Paragraph:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Code&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;!-- --&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Paragraph:
-
-    Code&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* * *
-
-***
-
-*****
-
-- - -
-
----------------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Example&quot;&gt;an example&lt;/a&gt; link.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://example.com&quot;&gt;This link&lt;/a&gt; has no title attr.&lt;/p&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Optional Title&quot;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is [an example](http://example.com &quot;Example&quot;) link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example] [id] reference-style link.
-
-[id]: http://example.com &quot;Optional Title&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This paragraph has some &lt;code class=&quot;language-text&quot;&gt;code&lt;/code&gt; in it.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This paragraph has some `code` in it.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://via.placeholder.com/200x50&quot; alt=&quot;Alt Text&quot; title=&quot;Image Title&quot;&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;![Alt Text](https://via.placeholder.com/200x50 &quot;Image Title&quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;Yeah, I didn&apos;t either.&lt;/p&gt;</content:encoded></item></channel></rss>

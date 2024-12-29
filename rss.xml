@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Random notes and thoughts.]]></description><link>https://thomas6188.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Dec 2024 10:12:30 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[About my work I am a Technical Architect at Tata Consultancy Service. I have 13+ years of experience in SharePoint and Office 365 space…]]></description><link>https://thomas6188.github.io/blog/hello-world/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/hello-world/</guid><pubDate>Tue, 24 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h5&gt;&lt;ins&gt;&lt;em&gt;About my work&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Random notes and thoughts.]]></description><link>https://thomas6188.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Dec 2024 10:19:06 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[About me I am a Technical Architect at Tata Consultancy Service. I have 13+ years of experience in SharePoint and Office 365 space, with…]]></description><link>https://thomas6188.github.io/blog/hello-world/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/hello-world/</guid><pubDate>Tue, 24 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h5&gt;&lt;ins&gt;&lt;em&gt;About me&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
 &lt;p&gt;I am a Technical Architect at Tata Consultancy Service. I have 13+ years of experience in SharePoint and Office 365 space, with focus on cloud and related technologies- SharePoint Online, Office 365, Azure, SharePoint Server, Dot Net, and JavaScript.&lt;/p&gt;
 &lt;p&gt;At TCS, I am part of Microsoft Digital Workplace team that helps customers build a Modern Workplace using Microsoft SAAS and Cloud offerings.&lt;/p&gt;
 &lt;p&gt;I started my career as a SharePoint developer in 2011. Back in those days, everything was on-prem, and WSP Builder was the goto extension😑. Building a custom component required a SharePoint Server, not only for deployment but also for developement. I still have the VDI files of SP 2007, 2010, and 2013 dev servers in my backup drive😃.
@@ -6,30 +6,9 @@
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;h5&gt;&lt;ins&gt;&lt;em&gt;My Roles and Responsibilities&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
-&lt;br&gt;
 &lt;p&gt;Design and Develop Modern Workplace solutions such as Intranets, Content Management, and Collaboration Portals, leveraging SharePoint, Office 365, and Azure.&lt;/p&gt;
 &lt;p&gt;Participate in RFPs and Design Reviews by providing ideas, feedback, and solutions. Interact with clients to understand the business requirements and provide the right solution.&lt;/p&gt;
 &lt;p&gt;Implement SharePoint On-Premise to Office 365 migration, Office 365 roll-out and enablement (setup and configuration) for greenfield projects.&lt;/p&gt;
-&lt;p&gt;Guide peers in understanding SharePoint and related technologies.
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h5&gt;&lt;ins&gt;&lt;em&gt;Key areas that I have worked on recently&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
-&lt;br&gt;
-&lt;h5&gt;SharePoint and Office 365&lt;/h5&gt;
-&lt;p&gt;SharePoint Framework (SPFx) Apps, Office UI Fabric, PnP JS, Single Page Apps, SharePoint Add-Ins, Site Provisioning, Microsoft Groups, Modern Team and Communication Sites, Teams, and Planner. Power Platform- Power Automate and Power Apps.&lt;/p&gt;
-&lt;h5&gt;Azure&lt;/h5&gt;
-&lt;p&gt;Graph APIs, Azure DevOps, Logic Apps, Azure Functions, and App Services.&lt;/p&gt;
-&lt;h5&gt;Web Developement&lt;/h5&gt;
-&lt;p&gt;Asp.Net, JavaScript, React JS, Angular JS, TypeScript, and Bootstrap. Basics of Angular, and Vue JS.&lt;/p&gt;
-&lt;h5&gt;Migration Tools&lt;/h5&gt;
-&lt;p&gt;Sharegate, Metalogix.
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h5&gt;&lt;ins&gt;&lt;em&gt;Apps and Tools that I use&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
-&lt;p&gt;VS Code, Visual Studio, Postman, PowerShell, GitKraken, and JIRA.&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;h5&gt;&lt;ins&gt;&lt;em&gt;Science and Tech&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
 &lt;br&gt;
@@ -37,53 +16,50 @@
 &lt;p&gt;Today, 15 years later, nothing has changed for me. I still read that magazine (now Digit), I still get excited when I see a new product launch, a new breakthrough or a discovery in science and tech.  Checkout the Tesla auto-pilot feature- the way it works (flawlessly) is simply amazing and mind blowing.&lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;h5&gt;Tech that I own&lt;/h5&gt;
-&lt;p&gt;Laptops: ThinkPad E595, IdeaPad 530S.&lt;/p&gt;
-&lt;p&gt;Monitor: LG 22MP68VQ.&lt;/p&gt;
-&lt;p&gt;Keyboard: Red Gear MK881 Mechanical Keyboard.&lt;/p&gt;
-&lt;p&gt;Headphones: Bose QC 35 (god&apos;s gift to tech lovers), Sennheiser CX 275.&lt;/p&gt;
-&lt;p&gt;Tablet: Apple iPad (2018).&lt;/p&gt;
-&lt;p&gt;E-Reader: Amazon Kindle Paperwhite (2014).&lt;/p&gt;
+&lt;p&gt;Laptops: ThinkPad E595, IdeaPad 530S.
+Monitor: LG 22MP68VQ.
+Keyboard: Red Gear MK881 Mechanical Keyboard.
+Headphones: Bose QC 35 (god&apos;s gift to tech lovers), Sennheiser CX 275.
+Tablet: Apple iPad (2018).
+E-Reader: Amazon Kindle Paperwhite (2014).&lt;br&gt;
 &lt;br&gt;
-&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;h5&gt;&lt;ins&gt;&lt;em&gt;Food and Travel&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
-&lt;br&gt; 
-&lt;p&gt;One thing I believe when it comes to Food and Travel is that it should never be a forced activity. It is best enjoyed alone or with people you like. Instagram or Facebook posts shouldn&apos;t be the deciding factor, your fondness for the people, place, and food should.&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h5&gt;Food&lt;/h5&gt;
-&lt;p&gt;Fav Food: Malabar Parotta + Chicken/Beef fry.&lt;/p&gt;
-&lt;p&gt;Fav Wine: Red. Cabernet Sauvignon, and Merlot (both recommended by a family friend). Brand - Jacob&apos;s Creek.&lt;/p&gt;
-&lt;p&gt;Fav Chocolates: Haigh&apos;s Dessert Chocolate Block, Whittaker&apos;s Dark Almond, Lindt 70% Dark, Aldi Choceur Dark Block, Amul 55% Dark.&lt;/p&gt;
-&lt;p&gt;Fav Ice Creams: Haagen-Dazs cookie dough chip, Connoisseur cookies and cream, Amul (almost any flavour).&lt;/p&gt;
-&lt;br&gt; 
-&lt;h5&gt;Travel&lt;/h5&gt;
-&lt;p&gt;Fav local journey: Hometown ↔ Trivandrum. KSRTC/Indian Railways. Window seat.  Cloudy weather, with light drizzle.&lt;/p&gt;
-&lt;p&gt;Recent memorable trip: Great Ocean Road, Melbourne.&lt;/p&gt;
-&lt;p&gt;Recent memorable pics:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://photos.app.goo.gl/qwAYQDJmXe6zBjT6A&quot;&gt;https://photos.app.goo.gl/qwAYQDJmXe6zBjT6A&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://photos.app.goo.gl/NAX3Hgi7ZxuWM3vy9&quot;&gt;https://photos.app.goo.gl/NAX3Hgi7ZxuWM3vy9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Wishlist: Euro Trip.&lt;br&gt;
 &lt;br&gt;
+One thing I believe when it comes to Food and Travel is that it should never be a forced activity. It is best enjoyed alone or with people you like. Instagram or Facebook posts shouldn&apos;t be the deciding factor, your fondness for the people, place, and food should.  
+&lt;h5&gt;Food&lt;/h5&gt;
+&lt;p&gt;Fav Food: Malabar Parotta + Chicken/Beef fry.
+Fav Wine: Red. Cabernet Sauvignon, and Merlot (both recommended by a family friend). Brand - Jacob&apos;s Creek.
+Fav Chocolates: Haigh&apos;s Dessert Chocolate Block, Whittaker&apos;s Dark Almond, Lindt 70% Dark, Aldi Choceur Dark Block, Amul 55% Dark.
+Fav Ice Creams: Haagen-Dazs cookie dough chip, Connoisseur cookies and cream, Amul (almost any flavour).
 &lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;Travel&lt;/h5&gt;
+&lt;p&gt;Fav local journey: Hometown ↔ Trivandrum. KSRTC/Indian Railways. Window seat.  Cloudy weather, with light drizzle.
+Recent memorable trip: Great Ocean Road, Melbourne.
+Recent memorable pics:
+&lt;a href=&quot;https://photos.app.goo.gl/qwAYQDJmXe6zBjT6A&quot;&gt;https://photos.app.goo.gl/qwAYQDJmXe6zBjT6A&lt;/a&gt;
+&lt;a href=&quot;https://photos.app.goo.gl/NAX3Hgi7ZxuWM3vy9&quot;&gt;https://photos.app.goo.gl/NAX3Hgi7ZxuWM3vy9&lt;/a&gt;
+Wishlist: Euro Trip.&lt;/p&gt;
 &lt;h5&gt;&lt;ins&gt;&lt;em&gt;Entertainment&lt;/em&gt;&lt;/ins&gt;&lt;/h5&gt;
 &lt;br&gt; 
-&lt;h5&gt;Books&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/review/list/6098066-thomas-mathew&quot;&gt;https://www.goodreads.com/review/list/6098066-thomas-mathew&lt;/a&gt;&lt;/p&gt;
-&lt;br&gt;
+##### Books 
+&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/review/list/6098066-thomas-mathew&quot;&gt;https://www.goodreads.com/review/list/6098066-thomas-mathew&lt;/a&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;h5&gt;Movies and Television&lt;/h5&gt;
-&lt;p&gt;Languages: English, Hindi, and Malayalam.&lt;/p&gt;
-&lt;p&gt;Genre: Action, Comedy, Romance, and Sci-fi. Basically, anything except Horror.&lt;/p&gt;
-&lt;p&gt;Recent Fav Movies: Avengers Endgame, Joker, The Irishman, Uri, Lucifer, Kumbalangi Nights.&lt;/p&gt;
-&lt;p&gt;Recent Favs Shows: Silicon Valley, BoJack Horseman, The Boys, The Family Man, Panchayat.&lt;/p&gt;
-&lt;p&gt;Much awaited: No Time to Die, Top Gun Maverick.&lt;/p&gt;
-&lt;p&gt;TV Shows: &lt;a href=&quot;https://www.imdb.com/list/ls073361911/&quot;&gt;https://www.imdb.com/list/ls073361911/&lt;/a&gt;&lt;/p&gt;
-&lt;br&gt;  
+&lt;p&gt;Languages: English, Hindi, and Malayalam.
+Genre: Action, Comedy, Romance, and Sci-fi. Basically, anything except Horror.&lt;br&gt;
+Recent Fav Movies: Avengers Endgame, Joker, The Irishman, Uri, Lucifer, Kumbalangi Nights.
+Recent Favs Shows: Silicon Valley, BoJack Horseman, The Boys, The Family Man, Panchayat.
+Much awaited: No Time to Die, Top Gun Maverick.
+TV Shows: &lt;a href=&quot;https://www.imdb.com/list/ls073361911/&quot;&gt;https://www.imdb.com/list/ls073361911/&lt;/a&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;h5&gt;Sports&lt;/h5&gt;
-&lt;p&gt;Cricket (W&amp;#x26;P), Tennis (W), and WWE(W).&lt;/p&gt;
+&lt;p&gt;Cricket, Tennis, F1, and WWE.&lt;br&gt;
 &lt;br&gt;
-&lt;p&gt;If there is one guilty pleasure that I have when it comes to sports, that would be WWE (if you count it as Sports). Back in the days, it was known as WWF.  I still remember the good old days, when I used to play VCR cassettes on repeat mode, every time I travelled to my hometown in Kerala for my summer vacation.&lt;br&gt;
-The matches (and storylines) we have now cannot hold a candle to what we had during the Attitude Era. With the passage of time, and as I grew older, the thrill for the sports fizzled out. Although, I do enjoy major annual events such as WrestleMania, in a hope that I get to see some of the old WWE Hall Of Famers.  Stone Cold&apos;s entrance music still gives me goose bumps 🤩.&lt;/p&gt;
-&lt;br&gt; 
-&lt;br&gt; </content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+If there is one guilty pleasure that I have when it comes to sports, that would be WWE (if you count it as Sports). Back in the days, it was known as WWF.  I still remember the good old days, when I used to play VCR cassettes on repeat mode, every time I travelled to my hometown in Kerala for my summer vacation.&lt;br&gt;
+The matches (and storylines) we have now cannot hold a candle to what we had during the Attitude Era. With the passage of time, and as I grew older, the thrill for the sports fizzled out. Although, I do enjoy major annual events such as WrestleMania, in a hope that I get to see some of the old WWE Hall Of Famers.  Stone Cold&apos;s entrance music still gives me goose bumps 🤩.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://thomas6188.github.io/blog/new-beginnings/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
@@ -175,10 +151,4 @@ would be the word &quot;and&quot; and the Little Blind Text should turn around a
 to its own, safe country. But nothing the copy said could convince her and so it
 didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
 with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the…]]></description><link>https://thomas6188.github.io/blog/my-second-post/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
-&lt;p&gt;Did you know that &quot;despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich.&quot;?
-(&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn&apos;t either.&lt;/p&gt;</content:encoded></item></channel></rss>
+for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already.]]></description><link>https://thomas6188.github.io/blog/my-second-post/</link><guid isPermaLink="false">https://thomas6188.github.io/blog/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;</content:encoded></item></channel></rss>

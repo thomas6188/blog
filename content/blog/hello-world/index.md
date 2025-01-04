@@ -4,7 +4,7 @@ date: "2019-12-24"
 description: "Hello World"
 ---
 ## About Me
-
+I am a Software Engineer from Kerala, India. I graduated in 2010 with a bachelor's degree in Information Technology. I started my career as a SharePoint Developer. I now focus on helping customers build a Modern Workplace using Microsoft SAAS and Cloud offerings.
 
 ### <ins>My Work</ins>
 I work as a Tech Lead at EY GDS India. I have 14+ years of experience in SharePoint and M365 space, with focus on cloud and related technologies- SharePoint Online, Office 365, Azure, SharePoint Server, Dot Net, and JavaScript.
@@ -28,9 +28,7 @@ I started my career as a SharePoint developer in 2011. Back in those days, every
 ### <ins>Leisure</ins>
 
 #### Science and Tech
-I have always been fascinated by Science and Technology. My love for tech started (during my high school days) when I read a magazine called The Chip. While growing up, I didn't have access to Internet, so this magazine was my gateway to the world of gadgets, apps, and technology in general. The first personal computer I had was a Pentium 3 Desktop, with 48 MB RAM. This was my lab for trying out a new OS, apps, and games. I still remember making a scene 😭 at home so that my parents can buy me a 16 MB RAM module because Win XP won't install with anything less 😞.   
-
-Today, 15 years later, nothing has changed for me. I still read that magazine (now Digit), I still get excited when I see a new product launch, a new breakthrough or a discovery in science and tech.  Checkout the Tesla auto-pilot feature- the way it works (flawlessly) is simply amazing and mind blowing.  
+I have always been fascinated by Science and Technology. My love for tech started (during my high school days) when I read a magazine called The Chip. While growing up, I didn't have access to Internet, so this magazine was my gateway to the world of gadgets, apps, and technology in general. The first personal computer I had was a Pentium 3 Desktop, with 48 MB RAM. This was my lab for trying out a new OS, apps, and games. I still remember making a scene 😭 at home so that my parents can buy me a 16 MB RAM module because Win XP won't install with anything less 😞. Today, 15 years later, nothing has changed for me except the medium- Reddit and HackerNews have replaced the print magazine. I still get excited when I see a new product launch, a new breakthrough or a discovery in science and tech.  
 
 ##### Tech that I own
  

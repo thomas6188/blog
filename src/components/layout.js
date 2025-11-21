@@ -6,7 +6,6 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
-
   header = (
     <div className="landing-header">
       <div className="header-title">

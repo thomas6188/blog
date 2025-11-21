@@ -34,8 +34,8 @@ const LandingPage = ({ data, location }) => {
             </p>
           </div>
           <div className="action-buttons">
-            <Link to="/blogs" className="circle-button btn-yellow">
-              Blogs
+            <Link to="/posts" className="circle-button btn-yellow">
+              Blog
             </Link>
             <Link to="/contact" className="circle-button btn-red">
               Contact

@@ -30,7 +30,7 @@ const LandingPage = ({ data, location }) => {
             <h5>A Bit About Me:</h5>
             <p>
               I am a Software Engineer from Kerala, India. I graduated in 2010 with a bachelor's degree in Information Technology.
-              I started my career as a SharePoint Developer. I now focus on helping customers build a Modern Workplace using Microsoft SAAS and Cloud offerings.
+              I focus on helping customers build a Modern Workplace using Microsoft 365 and Azure Cloud offerings.
             </p>
           </div>
           <div className="action-buttons">

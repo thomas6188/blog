@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Thomas Blog`,
+    title: `Thomas Mathew`,
     author: {
       name: `Thomas Mathew`,
       summary: `who lives and works in Trivandrum, Kerala.`,

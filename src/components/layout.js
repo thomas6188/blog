@@ -1,33 +1,38 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { FaLinkedin, FaTwitter, FaXTwitter, FaGithub } from "react-icons/fa"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
 
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/blog">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/blog">
-        {title}
-      </Link>
-    )
-  }
+  header = (
+    <div className="landing-header">
+      <div className="header-title">
+        <Link to="/">{title} <span style={{ fontWeight: 'normal', fontSize: '0.8em' }}></span></Link>
+      </div>
+      <nav className="header-nav">
+        <a href="https://linkedin.com/in/thomas6188" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin color="#0a66c2" size={22} />
+        </a> |
+        <a href="https://twitter.com/thomas6188" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <FaTwitter color="#333" size={22} />
+        </a> |
+        <a href="https://github.com/thomas6188" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub color="#333" size={22} />
+        </a>
+      </nav>
+    </div>
+  )
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+      <footer className="landing-footer">
+        <div className="footer-column">
+        </div>
       </footer>
     </div>
   )

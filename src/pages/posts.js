@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -43,7 +44,16 @@ const BlogIndex = ({ data, location }) => {
                                         itemProp="description"
                                     />
                                     <div className="post-card-author">
-                                        <div className="author-avatar"></div>
+                                        <StaticImage
+                                            className="author-avatar"
+                                            layout="fixed"
+                                            formats={["auto", "webp", "avif"]}
+                                            src="../images/profile-pic.png"
+                                            width={32}
+                                            height={32}
+                                            quality={95}
+                                            alt="Profile picture"
+                                        />
                                         <div>
                                             <div className="author-name">Thomas Mathew</div>
                                             <div className="author-role">Author</div>

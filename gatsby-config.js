@@ -10,7 +10,7 @@
 module.exports = {
   pathPrefix: `/blog`,
   siteMetadata: {
-    title: `Thomas Mathew`,
+    title: `Home`,
     author: {
       name: `Thomas Mathew`,
       summary: `who lives and works in Trivandrum, Kerala.`,

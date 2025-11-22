@@ -25,10 +25,7 @@ const BlogIndex = ({ data, location }) => {
                                 itemScope
                                 itemType="http://schema.org/Article"
                             >
-                                <Link to={`/posts${post.fields.slug}`} className="post-card-image">
-                                    {/* Placeholder for image */}
-                                    <span>📝</span>
-                                </Link>
+
                                 <div className="post-card-content">
                                     <div className="post-card-meta">
                                         {post.frontmatter.date}

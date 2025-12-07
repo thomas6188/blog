@@ -31,6 +31,14 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer className="landing-footer">
         <div className="footer-column">
+          <p>
+            Powered by{" "}
+            <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>{" "}
+
+            and{" "}
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            Developed with ❤️ — and a touch of antigravity.
+          </p>
         </div>
       </footer>
     </div>

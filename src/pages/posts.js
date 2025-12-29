@@ -1,72 +1,38 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Sidebar from "../components/sidebar"
+import ListHeader from "../components/listHeader"
 
 const BlogIndex = ({ data, location }) => {
-    const siteTitle = data.site.siteMetadata?.title || `Title`
-    const posts = data.allMarkdownRemark.nodes
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const posts = data.allMarkdownRemark.nodes
 
-    return (
-        <Layout location={location} title={siteTitle}>
-            <div className="posts-container">
-                <Sidebar />
-                <div className="posts-grid">
-                    {posts.map(post => {
-                        const title = post.frontmatter.title || post.fields.slug
+  return (
+    <Layout location={location} title={siteTitle}>
+      <div className="posts-container">
+        <ListHeader />
+        <div className="new-posts-list">
+          {posts.map(post => {
+            const title = post.frontmatter.title || post.fields.slug
+            const dateStr = post.frontmatter.date ? post.frontmatter.date.toUpperCase() : ""
 
-                        return (
-                            <article
-                                key={post.fields.slug}
-                                className="post-card"
-                                itemScope
-                                itemType="http://schema.org/Article"
-                            >
-
-                                <div className="post-card-content">
-                                    <div className="post-card-meta">
-                                        {post.frontmatter.date}
-                                    </div>
-                                    <h2 className="post-card-title">
-                                        <Link to={`/posts${post.fields.slug}`} itemProp="url">
-                                            <span itemProp="headline">{title}</span>
-                                        </Link>
-                                    </h2>
-                                    <p
-                                        className="post-card-excerpt"
-                                        dangerouslySetInnerHTML={{
-                                            __html: post.frontmatter.description || post.excerpt,
-                                        }}
-                                        itemProp="description"
-                                    />
-                                    <div className="post-card-author">
-                                        <StaticImage
-                                            className="author-avatar"
-                                            layout="fixed"
-                                            formats={["auto", "webp", "avif"]}
-                                            src="../images/profile-pic.png"
-                                            width={32}
-                                            height={32}
-                                            quality={95}
-                                            alt="Profile picture"
-                                        />
-                                        <div>
-                                            <div className="author-name">Thomas Mathew</div>
-                                            <div className="author-role">Author</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        )
-                    })}
+            return (
+              <div className="new-post-item" key={post.fields.slug}>
+                <div className="new-post-date">
+                  {dateStr}
                 </div>
-            </div>
-        </Layout>
-    )
+                <Link to={`/posts${post.fields.slug}`} className="new-post-title">
+                  {title}
+                </Link>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
 export default BlogIndex
@@ -87,14 +53,12 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
-        excerpt
         fields {
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "DD-MMM-YYYY")
           title
-          description
         }
       }
     }

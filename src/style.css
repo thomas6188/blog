@@ -1,4 +1,5 @@
 /* CSS Custom Properties Definitions */
+@import url('https://fonts.googleapis.com/css?family=Jost');
 
 :root {
   --maxWidth-none: "none";
@@ -30,8 +31,8 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: sans-serif;
-  --fontFamily-serif: "Satisfy", math;
+  --fontFamily-sans: "Jost", sans-serif;
+  --fontFamily-serif: "Jost", "Satisfy", math;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -472,62 +473,65 @@ a:focus {
 /* Posts Page Layout */
 
 .posts-container {
-  display: flex;
-  gap: var(--spacing-12);
-  align-items: flex-start;
-  max-width: var(--maxWidth-6xl);
+  display: block;
+  max-width: var(--maxWidth-3xl);
+  /* Narrower width for the list */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sidebar {
-  flex: 0 0 250px;
-  position: sticky;
-  top: var(--spacing-8);
+.listHeader {
+  width: 100%;
+  margin-bottom: var(--spacing-12);
+  text-decoration: underline;
 }
 
-.sidebar-title {
+.listHeader-title {
   font-family: var(--font-heading);
-  font-size: var(--fontSize-5);
+  font-size: var(--fontSize-7);
+  /* Larger size like in the image */
   font-weight: var(--fontWeight-black);
   margin-bottom: var(--spacing-2);
   line-height: 1.2;
 }
 
-.sidebar-subtitle {
-  font-family: "Satisfy", cursive;
+.listHeader-subtitle {
+  font-family: var(--font-body);
   /* Assuming a cursive font is available or falls back */
   font-size: var(--fontSize-4);
   margin-bottom: var(--spacing-4);
   color: var(--color-text);
 }
 
-.sidebar-description {
+.listHeader-description {
   font-size: var(--fontSize-1);
   color: var(--color-text-light);
   margin-bottom: var(--spacing-8);
   line-height: var(--lineHeight-relaxed);
 }
 
-.sidebar-nav ul {
+.listHeader-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar-nav li {
+.listHeader-nav li {
   margin-bottom: var(--spacing-2);
 }
 
-.sidebar-nav a {
+.listHeader-nav a {
   text-decoration: none;
   color: var(--color-text-light);
   font-size: var(--fontSize-1);
   transition: color 0.2s;
 }
 
-.sidebar-nav a:hover {
+.listHeader-nav a:hover {
   color: var(--color-heading-black);
 }
 
+/* Old grid styles preserved but we will use the new list style below */
 .posts-grid {
   flex: 1;
   display: grid;
@@ -661,11 +665,61 @@ a:focus {
     flex-direction: column;
   }
 
-  .sidebar {
+  .listHeader {
     width: 100%;
     position: static;
     margin-bottom: var(--spacing-8);
     max-height: 12vh;
     overflow-y: auto;
+    text-decoration: underline;
   }
+}
+
+/* New Post List Styles */
+.new-posts-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.new-post-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.new-post-item:hover {
+  transform: translateX(5px);
+}
+
+.new-post-date {
+  border: 1px solid #000;
+  padding: 0.25rem 0.5rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #000;
+  text-transform: uppercase;
+  white-space: nowrap;
+  min-width: 120px;
+  text-align: center;
+  background-color: white;
+  /* Ensure it stands out if bg changes */
+  font-weight: 500;
+}
+
+.new-post-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  /* Regular weight as per image, or maybe slightly bold? image looks regular */
+  color: #1a202c;
+  text-decoration: none;
+  line-height: 1.4;
+  font-family: var(--font-heading);
+}
+
+.new-post-title:hover {
+  text-decoration: none;
+  color: var(--color-primary);
 }

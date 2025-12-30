@@ -1,6 +1,6 @@
 ---
-title: Life
-date: "2015-05-28T22:40:32.169Z"
+title: 2025 Year in Review
+date: "2025-12-30T22:40:32.169Z"
 description:
 ---
 

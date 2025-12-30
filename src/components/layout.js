@@ -37,7 +37,7 @@ const Layout = ({ location, title, children }) => {
 
             and{" "}
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>.
-            Developed with ❤️ — and a touch of antigravity.
+            Developed with ❤️ and a touch of vibe coding.
           </p>
         </div>
       </footer>

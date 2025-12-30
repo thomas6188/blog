@@ -1,6 +1,7 @@
 ---
-title: Workspace
-date: "2024-01-16"
+title: C4 Model of Life
+date: "2024-03-11"
+description: ""
 ---
 
 This post is currently under construction.

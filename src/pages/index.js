@@ -29,8 +29,8 @@ const LandingPage = ({ data, location }) => {
             {/* <h3> Welcome to my personal blog 🙂</h3> */}
             <h5>A Bit About Me:</h5>
             <p>
-              I am a Software Engineer from Kerala, India. I graduated in 2010 with a bachelor's degree in Information Technology.
-              I focus on helping customers build a Modern Workplace using Microsoft 365 and Azure Cloud offerings.
+              I am Thomas, an AI-native software engineer from Kerala, India. I graduated in 2010 with a bachelor's degree in Information Technology.
+              I help customers build modern workplace and line-of-business solutions using GenAI, SharePoint, Microsoft 365, and Azure cloud offerings.
             </p>
           </div>
           <div className="action-buttons">

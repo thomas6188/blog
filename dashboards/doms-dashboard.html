@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOMS Graphite Field Guide & Model Database</title>
+  <style>
+    /* CSS Variables for Dark Theme (Default) */
+    :root {
+      --bg: #0b0f17;
+      --card-bg: #151a24;
+      --card-border: #232b3b;
+      --card-border-hover: #3b4860;
+      --text-main: #f1f5f9;
+      --text-muted: #8b9bb4;
+      --accent: #f59e0b;
+      --grade-bg: #1e2533;
+      --control-bg: #11151f;
+      --badge-bg: #1e2637;
+      --badge-text: #cbd5e1;
+      --review-text: #cbd5e1;
+      --btn-hover: #1f2737;
+
+      --tag-low: #ef4444;
+      --tag-med: #f59e0b;
+      --tag-high: #10b981;
+      --tag-polar: #ec4899;
+      --tag-avg: #64748b;
+    }
+
+    /* CSS Variables for Light Mode */
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --card-border-hover: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --accent: #d97706;
+      --grade-bg: #f1f5f9;
+      --control-bg: #ffffff;
+      --badge-bg: #f1f5f9;
+      --badge-text: #475569;
+      --review-text: #334155;
+      --btn-hover: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      padding: 2rem 1.25rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .header-content {
+      flex: 1;
+    }
+
+    .header-tag {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    header h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.4rem;
+      max-width: 760px;
+      line-height: 1.45;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--control-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 0.55rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .theme-toggle:hover {
+      background: var(--btn-hover);
+    }
+
+    /* Controls Toolbar */
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      background: var(--control-bg);
+      border: 1px solid var(--card-border);
+      padding: 1rem 1.25rem;
+      border-radius: 10px;
+      margin-bottom: 1.75rem;
+    }
+
+    .search-input {
+      flex: 1 1 220px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.6rem 0.85rem;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .filter-group label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .select-input {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.55rem 0.85rem;
+      color: var(--text-main);
+      font-size: 0.85rem;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .select-input:focus {
+      border-color: var(--accent);
+    }
+
+    .reset-btn {
+      background: transparent;
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      border-radius: 6px;
+      padding: 0.55rem 0.85rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .reset-btn:hover {
+      background: var(--btn-hover);
+      color: var(--text-main);
+    }
+
+    .counter {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--card-border-hover);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .model-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .profile-badge {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 600;
+    }
+
+    .specs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+
+    .spec-label {
+      color: var(--text-muted);
+    }
+
+    .grade-pill {
+      font-family: monospace;
+      font-size: 0.82rem;
+      background: var(--grade-bg);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid var(--card-border);
+    }
+
+    .actual-grade {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .retention-meter {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .dot.low { background-color: var(--tag-low); }
+    .dot.med { background-color: var(--tag-med); }
+    .dot.high { background-color: var(--tag-high); }
+
+    .review-box {
+      border-top: 1px solid var(--card-border);
+      padding-top: 0.85rem;
+      margin-top: auto;
+    }
+
+    .review-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sentiment-tag {
+      font-weight: 700;
+    }
+    .sentiment-high { color: var(--tag-high); }
+    .sentiment-mod { color: var(--tag-med); }
+    .sentiment-polar { color: var(--tag-polar); }
+    .sentiment-avg { color: var(--tag-avg); }
+
+    .review-text {
+      font-size: 0.86rem;
+      line-height: 1.45;
+      color: var(--review-text);
+    }
+
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="header-content">
+      <div class="header-tag">DOMS Industries Catalogue Analysis</div>
+      <h1>Graphite Field Guide & Model Database</h1>
+      <p>Factory ratings vs. actual core performance based on desk tests and r/pencils user reviews.</p>
+    </div>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+      <span id="themeIcon">☀️</span>
+      <span id="themeText">Light Mode</span>
+    </button>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search model (e.g., Karbon, Zoom, Y1...)" />
+    
+    <div class="filter-group">
+      <label for="sentimentFilter">Preference</label>
+      <select id="sentimentFilter" class="select-input">
+        <option value="all">All Sentiments</option>
+        <option value="Favored">Favored / Highly Rated</option>
+        <option value="Solid / Niche">Solid / Niche</option>
+        <option value="Polarizing">Polarizing</option>
+        <option value="Average">Average / Disposable</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="retentionFilter">Point Retention</label>
+      <select id="retentionFilter" class="select-input">
+        <option value="all">All Retentions</option>
+        <option value="High">High</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+
+    <button id="resetBtn" class="reset-btn">Reset</button>
+    <div class="counter" id="resultCount">Showing 14 models</div>
+  </div>
+
+  <div class="grid" id="cardGrid">
+
+    <div class="card" data-name="DOMS Zoom" data-sentiment="Favored" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Zoom</div>
+          <div class="profile-badge">Triangular</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low to Med</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-high">Favored</span>
+        </div>
+        <p class="review-text">Praised for smooth pastel lacquers and ergonomic tripod barrel. Buttery laydown, but core dulls fast.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Fusion" data-sentiment="Favored" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Fusion</div>
+          <div class="profile-badge">Soft-Touch Tri</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-high">Favored</span>
+        </div>
+        <p class="review-text">Identical core to Zoom with a rubberized matte jacket. Excellent grip for humid desks and long sessions.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Groove" data-sentiment="Solid / Niche" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Groove</div>
+          <div class="profile-badge">Indented Grip Tri</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-mod">Solid / Niche</span>
+        </div>
+        <p class="review-text">Recessed raw-wood dimples guide finger placement cleanly. Well-liked for grip training, though indents polarize feel.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Karbon" data-sentiment="Solid / Niche" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Karbon</div>
+          <div class="profile-badge">Hexagonal + Tipped</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-mod">Solid / Niche</span>
+        </div>
+        <p class="review-text">Drafting-style matte body with an integrated end ferrule. Looks executive, though it houses the standard soft school core.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS X1 X-Tra Super Dark" data-sentiment="Polarizing" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS X1</div>
+          <div class="profile-badge">Hexagonal</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">2B–3B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-polar">Polarizing</span>
+        </div>
+        <p class="review-text">High-contrast workhorse. Highly popular with students for jet-black lines, but blunts quickly and easily smudges.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS A1 Super Dark" data-sentiment="Polarizing" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS A1</div>
+          <div class="profile-badge">Hexagonal</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">2B–3B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-polar">Polarizing</span>
+        </div>
+        <p class="review-text">Alternative livery to the X1 for regional value packs. Extremely black mark, rapid tip wear.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Superio" data-sentiment="Solid / Niche" data-retention="Moderate">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Superio</div>
+          <div class="profile-badge">Hex / Tin Case</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot med"></div> Moderate</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-mod">Solid / Niche</span>
+        </div>
+        <p class="review-text">Comes in an embossed metal tin with a point protector. Slightly firmer graphite than X1 for cleaner daily notes.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Zillion" data-sentiment="Average" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Zillion</div>
+          <div class="profile-badge">Hexagonal</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-avg">Average</span>
+        </div>
+        <p class="review-text">Playful geometric graphics on standard hexagonal cedar. Built for school backpacks and fast consumption.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Y1" data-sentiment="Average" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Y1</div>
+          <div class="profile-badge">Hexagonal Economy</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-avg">Average</span>
+        </div>
+        <p class="review-text">Entry-level bulk pencil. Straightforward design, good centering, and dark graphite at an economical unit price.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Y1+ Triangle" data-sentiment="Solid / Niche" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Y1+</div>
+          <div class="profile-badge">Triangular Economy</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-mod">Solid / Niche</span>
+        </div>
+        <p class="review-text">Brings triangular ergonomic grip to the budget Y1 tier. Economical everyday pencil for students.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Wizdom" data-sentiment="Solid / Niche" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Wizdom</div>
+          <div class="profile-badge">Round + Tipped</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-mod">Solid / Niche</span>
+        </div>
+        <p class="review-text">Equipped with a matte finish that provides more finger purchase than glossy round pencils. Includes pink eraser.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Neon Rubber Tipped" data-sentiment="Average" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Neon</div>
+          <div class="profile-badge">Round + Eraser</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-avg">Average</span>
+        </div>
+        <p class="review-text">Slick high-gloss neon lacquer. Prone to rolling on flat desks; contains standard dark school core.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="DOMS Palladium Neostar Hello" data-sentiment="Average" data-retention="Low">
+      <div>
+        <div class="card-header">
+          <div class="model-name">DOMS Palladium / Neostar</div>
+          <div class="profile-badge">Novelty School</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">HB &rarr; <span class="actual-grade">~2B</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot low"></div> Low</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-avg">Average</span>
+        </div>
+        <p class="review-text">Collector-themed wraps marketed to early primary grades. Performance remains standard soft DOMS formula.</p>
+      </div>
+    </div>
+
+    <div class="card" data-name="Ticonderoga #2 Made by DOMS" data-sentiment="Favored" data-retention="High">
+      <div>
+        <div class="card-header">
+          <div class="model-name">Ticonderoga #2 (India)</div>
+          <div class="profile-badge">F.I.L.A. Hex</div>
+        </div>
+        <div class="specs">
+          <div class="spec-row">
+            <span class="spec-label">Factory vs. Actual</span>
+            <span class="grade-pill">#2 HB &rarr; <span class="actual-grade">True HB</span></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Point Retention</span>
+            <div class="retention-meter"><div class="dot high"></div> High</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-label">
+          <span>Community Take</span>
+          <span class="sentiment-tag sentiment-high">Favored</span>
+        </div>
+        <p class="review-text">Contract-produced by DOMS under F.I.L.A. Distinct formula with authentic HB firmness and excellent line control.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Theme Toggle Logic
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const themeText = document.getElementById('themeText');
+
+  function applyTheme(theme) {
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      themeIcon.textContent = '🌙';
+      themeText.textContent = 'Dark Mode';
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      themeIcon.textContent = '☀️';
+      themeText.textContent = 'Light Mode';
+    }
+  }
+
+  // Load saved preference
+  const savedTheme = localStorage.getItem('doms-dashboard-theme') || 'dark';
+  applyTheme(savedTheme);
+
+  themeToggle.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    const nextTheme = isLight ? 'dark' : 'light';
+    applyTheme(nextTheme);
+    localStorage.setItem('doms-dashboard-theme', nextTheme);
+  });
+
+  // Filter & Search Logic
+  const searchInput = document.getElementById('searchInput');
+  const sentimentFilter = document.getElementById('sentimentFilter');
+  const retentionFilter = document.getElementById('retentionFilter');
+  const resetBtn = document.getElementById('resetBtn');
+  const cards = document.querySelectorAll('.card');
+  const resultCount = document.getElementById('resultCount');
+  const cardGrid = document.getElementById('cardGrid');
+
+  function filterCards() {
+    const query = searchInput.value.toLowerCase().trim();
+    const sentiment = sentimentFilter.value;
+    const retention = retentionFilter.value;
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const name = card.getAttribute('data-name').toLowerCase();
+      const cardSentiment = card.getAttribute('data-sentiment');
+      const cardRetention = card.getAttribute('data-retention');
+
+      const matchesSearch = !query || name.includes(query);
+      const matchesSentiment = sentiment === 'all' || cardSentiment === sentiment;
+      const matchesRetention = retention === 'all' || cardRetention === retention;
+
+      if (matchesSearch && matchesSentiment && matchesRetention) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    resultCount.textContent = `Showing ${visibleCount} model${visibleCount === 1 ? '' : 's'}`;
+
+    let noResultEl = document.getElementById('noResults');
+    if (visibleCount === 0) {
+      if (!noResultEl) {
+        noResultEl = document.createElement('div');
+        noResultEl.id = 'noResults';
+        noResultEl.className = 'no-results';
+        noResultEl.textContent = 'No matching pencil models found.';
+        cardGrid.appendChild(noResultEl);
+      }
+    } else if (noResultEl) {
+      noResultEl.remove();
+    }
+  }
+
+  searchInput.addEventListener('input', filterCards);
+  sentimentFilter.addEventListener('change', filterCards);
+  retentionFilter.addEventListener('change', filterCards);
+
+  resetBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    sentimentFilter.value = 'all';
+    retentionFilter.value = 'all';
+    filterCards();
+  });
+</script>
+
+</body>
+</html>

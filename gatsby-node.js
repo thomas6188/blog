@@ -5,6 +5,7 @@
  */
 
 const path = require(`path`)
+const express = require(`express`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // Define the template for blog post
@@ -122,4 +123,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `)
+}
+
+/**
+ * Enable serving static HTML files (e.g. dashboards) in gatsby develop
+ * @type {import('gatsby').GatsbyNode['onCreateDevServer']}
+ */
+exports.onCreateDevServer = ({ app }) => {
+  app.use(express.static(`static`))
 }

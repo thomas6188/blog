@@ -5,7 +5,7 @@ date: "2024-01-03"
 ### About Me
 Hi there. I am an AI-native software engineer from Kerala, India. I graduated in 2010 with a bachelor's degree in Information Technology. I have 14+ years of experience in SharePoint and M365 space, with focus on cloud and related technologies- Copilot and Gen AI, SharePoint Online, Power Platform, Azure, React and TypeScript.
 
-I began my career as a SharePoint developer in 2011. In those days, everything was on-premises, and building custom components required a SharePoint Server for both development and deployment. One incorrect logic or memory leak could bring down the entire SharePoint farm. God bless the cloud.
+I began my career as a SharePoint developer in 2011. In those days, everything was on-premises, and building custom components required a SharePoint Server for both development and deployment. One incorrect logic or memory leak could bring down the entire SharePoint farm.
 
 
 ### Hobbies
